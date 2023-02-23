@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import * as ExpoAppgroupPath from 'expo-appgroup-path';
+import { getPath } from 'expo-appgroup-path';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{ExpoAppgroupPath.hello()}</Text>
+      <Text>{getPath('group.app.avocation.avocation')}</Text>
     </View>
   );
 }
